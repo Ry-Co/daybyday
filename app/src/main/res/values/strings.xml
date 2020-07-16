@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DayByDay</string>
+    <array name="campaigns_array">
+        <item>WW2</item>
+    </array>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string-array name="textSizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <array name="textSizesValues">
+        <item>15</item>
+        <item>25</item>
+        <item>50</item>
+    </array>
+
+
+</resources>

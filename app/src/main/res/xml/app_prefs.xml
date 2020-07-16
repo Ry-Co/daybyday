@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Settings">
+        <ListPreference
+            android:key="text_size_select"
+            android:title="Text Size"
+            app:useSimpleSummaryProvider="true"
+            app:entries="@array/textSizes"
+            app:entryValues="@array/textSizes"
+            app:dialogTitle="Test Title">
+        </ListPreference>
+
+        <MultiSelectListPreference
+            android:key="campaignAlerts"
+            android:title="Get alerts from"
+            android:summary="Which campaigns do you want alerts from"
+            android:entries="@array/campaigns_array"
+            android:entryValues="@array/campaigns_array">
+        </MultiSelectListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Extra">
+        <!-- <Preference
+            android:title="About">
+        </Preference> -->
+        <Preference
+            android:title="Build"
+            android:summary="0.0.1">
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
